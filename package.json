@@ -1,0 +1,22 @@
+{
+  "name": "easyload-js",
+  "description": "The images are loaded as required without compromising performance.",
+  "main": "src/easyload.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaomosantos/easyload.js"
+  },
+  "author": {
+    "name": "Max Oliveira",
+    "email": "joaomosantos@outlook.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}
