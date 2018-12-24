@@ -1,0 +1,96 @@
+// var
+$default: #f8f9fa;
+$html-tag: #2f6f9f;
+$html-attribute: #4f9fcf;
+$html-value: #d44950;
+$css-class: #0a8;
+$css-property: #99f;
+$css-value: #212529;
+$js-keyword: #c30;
+$js-element: #366;
+//end var
+
+// easyload.js
+.easyload {
+  img {
+    opacity: 0;
+    max-width: 100%;
+    max-height: 100%;
+
+    &.loaded {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+  }
+}
+// end easyload.js
+
+// code
+pre {
+  background-color: $default;
+  padding: 1em;
+  .html {
+    .tag {color: $html-tag;}
+    .title {color: $html-tag;}
+    .attribute {color: $html-attribute;}
+    .value {color: $html-value;}
+  }
+
+  .css {
+    .class {color: $css-class;}
+    .property {color: $css-property;}
+    //.value {color: $css-value;}
+  }
+
+  .javascript {
+    .keyword {color: $js-keyword;}
+    .element {color: $js-element;}
+  }
+}
+// end code
+
+// svg
+#loading {
+  animation: loading 5s linear infinite;
+  transform-origin: 75% 25%;
+  path {
+    fill: #6c757d;
+  }
+ }
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+svg path {fill: #007bff;}
+
+#image1 {
+  animation: imageload 2s linear infinite;
+}
+
+#image2 {
+  animation: imageload 3s linear infinite;
+}
+
+#image3 {
+  animation: imageload 4s linear infinite;
+}
+
+#image4 {
+  animation: imageload 5s linear infinite;
+}
+
+@keyframes imageload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+// end svg

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--<meta name="google-site-verification" content="g-XgYdrD4iCPQVdItOfLtIpAIGOD1lyYMk2jlEGV__c" />-->
+  <meta name="google-site-verification" content="g-XgYdrD4iCPQVdItOfLtIpAIGOD1lyYMk2jlEGV__c" />
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,276 @@
 
 	<title>EasyLoad.js</title>
 
-  <!--
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	-->
+
+  <link rel="stylesheet" href="css/vendor/bootstrap-4.2.1.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>coming soon!</h1>
+
+  <header class="jumbotron bg-light">
+    <div class="container text-center">
+      <svg xmlns="http://www.w3.org/2000/svg" height="200" version="1.1" viewBox="0 -47 937.5 937" width="200">
+          <path d="M 62.5 844 L 812.5 844 C 847.015625 844 875 816.015625 875 781.5 L 875 734.625 C 875 725.992188 868.007812 719 859.375 719 L 828.125 719 L 828.125 484.625 L 796.875 484.625 L 796.875 719 L 765.625 719 L 765.625 500.25 L 734.375 500.25 L 734.375 719 L 533.09375 719 C 516.453125 718.945312 501.230469 728.367188 493.84375 743.265625 C 491.710938 747.558594 487.328125 750.257812 482.53125 750.25 L 392.46875 750.25 C 387.671875 750.257812 383.289062 747.558594 381.15625 743.265625 C 373.769531 728.367188 358.546875 718.945312 341.90625 719 L 140.625 719 L 140.625 265.875 L 437.5 265.875 L 437.5 234.625 L 125 234.625 C 116.367188 234.625 109.375 241.617188 109.375 250.25 L 109.375 719 L 78.125 719 L 78.125 250.25 C 78.125 224.367188 99.117188 203.375 125 203.375 L 437.5 203.375 L 437.5 172.125 L 125 172.125 C 81.875 172.179688 46.929688 207.125 46.875 250.25 L 46.875 719 L 15.625 719 C 6.992188 719 0 725.992188 0 734.625 L 0 781.5 C 0 816.015625 27.984375 844 62.5 844 Z M 31.25 750.25 L 341.90625 750.25 C 346.703125 750.242188 351.085938 752.941406 353.21875 757.234375 C 360.605469 772.132812 375.828125 781.554688 392.46875 781.5 L 482.53125 781.5 C 499.171875 781.554688 514.394531 772.132812 521.78125 757.234375 C 523.914062 752.941406 528.296875 750.242188 533.09375 750.25 L 843.75 750.25 L 843.75 781.5 C 843.75 798.761719 829.761719 812.75 812.5 812.75 L 62.5 812.75 C 45.238281 812.75 31.25 798.761719 31.25 781.5 Z M 31.25 750.25 " />
+          <path d="M 171.875 297.125 L 203.125 297.125 L 203.125 328.375 L 171.875 328.375 Z M 171.875 297.125 " />
+          <path d="M 234.375 297.125 L 265.625 297.125 L 265.625 328.375 L 234.375 328.375 Z M 234.375 297.125 " />
+          <path d="M 296.875 297.125 L 328.125 297.125 L 328.125 328.375 L 296.875 328.375 Z M 296.875 297.125 " />
+          <path d="M 468.75 390.875 L 468.75 359.625 L 187.5 359.625 C 178.867188 359.625 171.875 366.617188 171.875 375.25 L 171.875 469 C 171.875 477.632812 178.867188 484.625 187.5 484.625 L 562.5 484.625 L 562.5 453.375 L 203.125 453.375 L 203.125 390.875 Z M 468.75 390.875 " />
+          <path d="M 171.875 656.5 L 281.25 656.5 L 281.25 687.75 L 171.875 687.75 Z M 171.875 656.5 " />
+          <path d="M 312.5 656.5 L 421.875 656.5 L 421.875 687.75 L 312.5 687.75 Z M 312.5 656.5 " />
+          <path d="M 453.125 656.5 L 562.5 656.5 L 562.5 687.75 L 453.125 687.75 Z M 453.125 656.5 " />
+          <path d="M 593.75 656.5 L 703.125 656.5 L 703.125 687.75 L 593.75 687.75 Z M 593.75 656.5 " />
+          <g id="image1">
+            <path d="M 421.875 531.5 C 421.875 522.867188 414.882812 515.875 406.25 515.875 L 328.125 515.875 C 319.492188 515.875 312.5 522.867188 312.5 531.5 L 312.5 609.625 C 312.5 618.257812 319.492188 625.25 328.125 625.25 L 406.25 625.25 C 414.882812 625.25 421.875 618.257812 421.875 609.625 Z M 390.625 594 L 343.75 594 L 343.75 547.125 L 390.625 547.125 Z M 390.625 594 " />
+          </g>
+          <g id="image2">
+            <path d="M 281.25 531.5 C 281.25 522.867188 274.257812 515.875 265.625 515.875 L 187.5 515.875 C 178.867188 515.875 171.875 522.867188 171.875 531.5 L 171.875 609.625 C 171.875 618.257812 178.867188 625.25 187.5 625.25 L 265.625 625.25 C 274.257812 625.25 281.25 618.257812 281.25 609.625 Z M 250 594 L 203.125 594 L 203.125 547.125 L 250 547.125 Z M 250 594 " />
+          </g>
+          <g id="image3">
+            <path d="M 687.5 625.25 C 696.132812 625.25 703.125 618.257812 703.125 609.625 L 703.125 531.5 C 703.125 522.867188 696.132812 515.875 687.5 515.875 L 609.375 515.875 C 600.742188 515.875 593.75 522.867188 593.75 531.5 L 593.75 609.625 C 593.75 618.257812 600.742188 625.25 609.375 625.25 Z M 625 547.125 L 671.875 547.125 L 671.875 594 L 625 594 Z M 625 547.125 " />
+          </g>
+          <g id="image4">
+            <path d="M 562.5 531.5 C 562.5 522.867188 555.507812 515.875 546.875 515.875 L 468.75 515.875 C 460.117188 515.875 453.125 522.867188 453.125 531.5 L 453.125 609.625 C 453.125 618.257812 460.117188 625.25 468.75 625.25 L 546.875 625.25 C 555.507812 625.25 562.5 618.257812 562.5 609.625 Z M 531.25 594 L 484.375 594 L 484.375 547.125 L 531.25 547.125 Z M 531.25 594 " />
+          </g>
+          <g id="loading">
+            <path d="M 703.125 0.25 C 573.679688 0.25 468.75 105.179688 468.75 234.625 C 468.75 364.070312 573.679688 469 703.125 469 C 832.570312 469 937.5 364.070312 937.5 234.625 C 937.351562 105.242188 832.507812 0.398438 703.125 0.25 Z M 703.125 437.75 C 590.941406 437.75 500 346.808594 500 234.625 C 500 122.441406 590.941406 31.5 703.125 31.5 C 815.308594 31.5 906.25 122.441406 906.25 234.625 C 906.125 346.753906 815.253906 437.625 703.125 437.75 Z M 703.125 437.75 " />
+            <path d="M 703.125 125.25 C 710.054688 125.324219 716.953125 126.054688 723.75 127.441406 L 700.65625 141.96875 L 717.3125 168.421875 L 770.046875 135.21875 C 773.707031 132.910156 776.246094 129.1875 777.0625 124.9375 C 777.882812 120.683594 776.894531 116.289062 774.34375 112.796875 L 735.9375 60.0625 L 710.667969 78.449219 L 723.171875 95.519531 C 682.769531 89.5 641.753906 101.421875 610.878906 128.15625 C 579.992188 154.890625 562.324219 193.78125 562.5 234.625 C 562.441406 263.527344 571.335938 291.730469 587.964844 315.363281 L 613.550781 297.40625 C 590.125 263.996094 587.25 220.335938 606.085938 184.140625 C 624.914062 147.949219 662.324219 125.246094 703.125 125.25 Z M 703.125 125.25 " />
+            <path d="M 792.046875 170.035156 C 815.46875 203.433594 818.351562 247.105469 799.507812 283.300781 C 780.671875 319.492188 743.273438 342.195312 702.464844 342.183594 C 695.550781 342.105469 688.648438 341.375 681.859375 340 L 704.941406 325.449219 L 688.289062 299.019531 L 635.554688 332.222656 C 631.894531 334.527344 629.355469 338.238281 628.539062 342.496094 C 627.726562 346.742188 628.703125 351.140625 631.25 354.644531 L 669.652344 407.378906 L 694.921875 388.96875 L 682.421875 371.90625 C 737.898438 379.839844 792.792969 354.082031 822.144531 306.347656 C 851.488281 258.605469 849.695312 198 817.570312 152.078125 Z M 792.046875 170.035156 " />
+          </g>
+      </svg>
+      <h1 class="display-4 text-primary">EasyLoad.js</h1>
+      <p class="lead">Is a lightweight and simple plugin based on jQuery.</p>
+      <hr class="my-4">
+      <p>Images are loaded as they enter the viewport, simply and easily.</p>
+      <p>Supports IE7+ and modern browsers and Support jQuery version >= 1.7.x.</p>
+      <p>
+        <a href="https://github.com/joaomosantos/easyload.js/archive/1.0.0.zip" class="btn btn-outline-primary my-2">Download</a>
+        <a href="https://github.com/joaomosantos/easyload.js" target="_blank" class="btn btn-outline-secondary my-2">Github</a>
+      </p>
+    </div>
+  </header>
+
+  <section class="container-fluid">
+    <div class="container">
+      <h2 class="text-primary">Getting Started</h2>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Package Manager:</p>
+          <pre><code class="javascript">bower install --save easyload-js</code></pre>
+          <p>Usage:</p>
+          <pre><code class="javascript"><span class="keyword">$</span>(<span class="element">'.easyload'</span>).<span class="keyword">easyload</span>();</code></pre>
+          <p>For a simple image load, use the following structure:</p>
+          <pre><code class="html"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"easyload"</span>&gt;</span><br> <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">""</span> <span class="attribute">data-src</span>=<span class="value">"image_path"</span>&gt;</span><br><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+          <p>Use css for transition effect:</p>
+          <pre><code class="css"><span class="class">.easyload img</span> {<br> <span class="property">opacity: </span><span class="value">0</span>;<br> <span class="property">max-width: </span><span class="value">100%</span>;<br> <span class="property">max-height: </span><span class="value">100%</span>;<br>}<br><br><span class="class">.easyload img.loaded</span> {<br> <span class="property">transition: </span><span class="value">opacity 1s</span>;<br>}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="container">
+      <h2 class="text-primary">Exemple</h2>
+      <hr class="my-4">
+
+      <div class="row">
+        <div class="col-md-12 mb-4">
+          <ul class="list-unstyled">
+            <li class="media">
+              <div class="easyload">
+                <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media my-4">
+              <div class="easyload">
+                <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media">
+              <div class="easyload">
+                <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+              </div>
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">List-based media object</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-1.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-2.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-3.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-4.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-5.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-6.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="media">
+            <div class="easyload">
+              <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+              <div class="media mt-3">
+                <a class="mr-3" href="#">
+                  <div class="easyload">
+                    <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+                  </div>
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="media">
+            <div class="easyload">
+              <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+              <div class="media mt-3">
+                <a class="mr-3" href="#">
+                  <div class="easyload">
+                    <img src="" data-src="images/small.jpg" class="mr-3" alt="">
+                  </div>
+                </a>
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-7.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-8.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="easyload">
+              <img src="" data-src="images/large-9.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+    </div>
+  </section>
+
+  <footer class="container-fluid">
+    <div class="container text-center">
+      <p>Copyright © 2018 <a href="https://github.com/joaomosantos" target="_blank">Max Oliveira</a></p>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/vendor/highlight.pack.js"></script>
+  <script src="js/easyload.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

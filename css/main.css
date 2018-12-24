@@ -1,0 +1,85 @@
+.easyload img {
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.easyload img.loaded {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+pre {
+  background-color: #f8f9fa;
+  padding: 1em;
+}
+pre .html .tag {
+  color: #2f6f9f;
+}
+pre .html .title {
+  color: #2f6f9f;
+}
+pre .html .attribute {
+  color: #4f9fcf;
+}
+pre .html .value {
+  color: #d44950;
+}
+pre .css .class {
+  color: #0a8;
+}
+pre .css .property {
+  color: #99f;
+}
+pre .javascript .keyword {
+  color: #c30;
+}
+pre .javascript .element {
+  color: #366;
+}
+
+#loading {
+  animation: loading 5s linear infinite;
+  transform-origin: 75% 25%;
+}
+#loading path {
+  fill: #6c757d;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+svg path {
+  fill: #007bff;
+}
+
+#image1 {
+  animation: imageload 2s linear infinite;
+}
+
+#image2 {
+  animation: imageload 3s linear infinite;
+}
+
+#image3 {
+  animation: imageload 4s linear infinite;
+}
+
+#image4 {
+  animation: imageload 5s linear infinite;
+}
+
+@keyframes imageload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
